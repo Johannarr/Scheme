@@ -10,10 +10,17 @@
 ;Elevar 2 a la 10
 (expt 2 10)
 
-;
+;Crear funcion operador
  (define (elevar x y)
   (cond
     ((= y 0) 0)
     ((= y 1) x)
      ((* x (elevar x (- y 1))))))
- 
+
+;Crear funcion elevar
+(define (convertir c)
+ (+ (* c 1.8) 32))
+
+(define (f1 x)
+  (if (< x 0) (- (cos (+ x 2)) (sin (/ x 2))))
+   (+ sin (* 2 x) cos(2)))
