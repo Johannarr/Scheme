@@ -22,5 +22,32 @@
  (+ (* c 1.8) 32))
 
 (define (f1 x)
-  (if (< x 0) (- (cos (+ x 2)) (sin (/ x 2))))
-   (+ sin (* 2 x) cos(2)))
+  (cond
+     ((< x 0) (- (cos (+ x 2)) (sin (/ x 2))))
+     ((> x 0) (+ (sin (* 2 x)) (cos (2))))))
+
+(define miLista '(1 2 3 4 5))
+
+(define miLista1 '(6 7 8 9 10))
+
+;largo de una lista
+(define (largo lista)
+(if (null? lista)
+       0
+     (+ 1 (largo (cdr lista)))))
+
+;Version append
+(define (appendV x1 x2)
+        (if (null? x1) x2
+            (list (car x1) (appendV (cdr x1) x2))))
+
+;n factorial
+(define (factorial n)
+  (if (<= n 1) 1
+      (* n (factorial (- n 1)))))
+
+(define miMap lista)
+ (if (< (length listado) 0)
+     (map ())
+
+
