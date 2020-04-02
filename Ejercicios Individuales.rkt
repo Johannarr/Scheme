@@ -46,8 +46,26 @@
   (if (<= n 1) 1
       (* n (factorial (- n 1)))))
 
-(define miMap lista)
- (if (< (length listado) 0)
-     (map ())
+;(define (miMap lista)
+ ;(if (< (length listado) 0)
+     ;(map ())
+
+
+
+;Otros ejercicios
+
+(define (piso x)
+  (floor x))
+
+
+
+;(reverse listado)
+
+(define (elemento lista pos)
+        (if (= pos 0) (car lista)
+          (elemento (cdr lista) (- pos 1))))
+
+
+
 
 
